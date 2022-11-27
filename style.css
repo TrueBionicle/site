@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("TTLakes"),
-       url("/fonts/TTLakes-Regular.woff");
+       url("fonts/TTLakes-Regular.woff");
 }
 
 html {
