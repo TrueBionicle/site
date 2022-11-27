@@ -1,4 +1,4 @@
-@import url(burger/burger.css);
+@import url(./burger/burger.css);
 
 .header {
     display: flex;

@@ -1,13 +1,13 @@
 
-@import url(/css/header/header.css);
-@import url(/css/article/article.css);
-@import url(/css/scrollbar/scrollbar.css);
-@import url(/css/title/title.css);
-@import url(/css/buttons/social.css);
-@import url(/css/buttons/reapir.css);
-@import url(/css/buttons/status.css);
-@import url(/css/buttons/close.css);
-@import url(/css/buttons/search.css);
+@import url(./css/header/header.css);
+@import url(./css/article/article.css);
+@import url(./css/scrollbar/scrollbar.css);
+@import url(./css/title/title.css);
+@import url(./css/buttons/social.css);
+@import url(./css/buttons/reapir.css);
+@import url(./css/buttons/status.css);
+@import url(./css/buttons/close.css);
+@import url(./css/buttons/search.css);
 
 @font-face {
   font-family: "TTLakes";
