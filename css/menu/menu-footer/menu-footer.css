@@ -1,0 +1,23 @@
+@import url(contact.css);
+@import url(lang.css);
+
+.menu-footer .social {
+    display: flex;
+}
+
+.menu-footer .social button{
+    width: 40px;
+    height: 40px;
+    margin-right: 16px
+}
+
+.menu-footer-margin {
+    margin-top: 25px;
+}
+
+
+@media (min-height: 1024px) {
+    .menu-footer-margin {
+        margin-top: 250px;
+    }
+}

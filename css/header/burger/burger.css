@@ -1,0 +1,40 @@
+.burger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 100%;
+}
+
+.burger span {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.burger::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    
+    position: absolute;
+    left: 10px;
+    top: 30%;
+
+}
+
+.burger::after {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: #fff;
+    
+    position: absolute;
+    left: 10px;
+    top: 65%;
+}

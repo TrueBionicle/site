@@ -1,0 +1,72 @@
+
+@import url(/css/header/header.css);
+@import url(/css/article/article.css);
+@import url(/css/scrollbar/scrollbar.css);
+@import url(/css/title/title.css);
+@import url(/css/buttons/social.css);
+@import url(/css/buttons/reapir.css);
+@import url(/css/buttons/status.css);
+@import url(/css/buttons/close.css);
+@import url(/css/buttons/search.css);
+
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 400;
+  src: local("TTLakes"),
+       url("/fonts/TTLakes-Regular.woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+
+button {
+  border: 0;
+  padding: 0;
+  background-color:inherit;
+  cursor: pointer;
+}
+
+.main {
+  background-color: #F8F8F8;
+  height: 100vh;
+  border-top: 1px solid #D9FFF5;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+      padding: 0 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .main {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+

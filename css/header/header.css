@@ -1,0 +1,58 @@
+@import url(burger/burger.css);
+
+.header {
+    display: flex;
+    height: 88px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header button {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.header button:last-child {
+    margin-right: 0;
+}
+
+
+/* logo */
+
+
+.logo {
+    position: relative;
+}
+
+.logo--dec--right-line::before {
+    position: absolute;
+    content: "";
+    display: none;
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: -21px;
+}
+
+
+@media (min-width: 768px) {
+
+    .logo {
+        margin-left: 26px;
+    }
+
+    .logo::before {
+        display: block;
+    }
+
+}
+
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+}

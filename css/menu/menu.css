@@ -1,0 +1,10 @@
+@import url(../../style.css);
+@import url(menu-header/menu-header.css);
+@import url(menu-main/menu-main.css);
+@import url(menu-footer/menu-footer.css);
+
+.menu {
+    width: 320px;
+    position: fixed;
+}
+
