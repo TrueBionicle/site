@@ -8,13 +8,21 @@
 @import url(./css/buttons/status.css);
 @import url(./css/buttons/close.css);
 @import url(./css/buttons/search.css);
+@import url(./css/section/section.css);
+@import url(./css/brands/brands.css);
 
 @font-face {
-  font-family: "TTLakes";
+  font-family: "TTLakes-Regular";
   font-style: normal;
   font-weight: 400;
-  src: local("TTLakes"),
-       url("fonts/TTLakes-Regular.woff");
+  src: url("fonts/TTLakes-Regular.woff");
+}
+
+@font-face {
+  font-family: "TTLakes-Medium";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/TTLakes-Medium.woff");
 }
 
 html {
@@ -28,7 +36,7 @@ html {
 body {
   margin: 0;
   font-size: 14px;
-  font-family: "TTLakes";
+  font-family: "TTLakes-Regular";
   font-style: normal;
   font-weight: 400;
 }

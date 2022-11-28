@@ -16,7 +16,7 @@
 }
 
 
-@media (min-height: 1024px) {
+@media (min-width: 1120px) {
     .menu-footer-margin {
         margin-top: 250px;
     }

@@ -1,0 +1,66 @@
+.brands {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 12px;
+}
+
+.brands::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%,
+    rgb(255, 255, 255) 100%);
+}
+
+.brands__item {
+    width: 240px;
+    height: 72px;
+    flex-shrink: 0;
+    margin: 8px;    
+}
+
+
+
+/* brands logo */
+
+.brands__item--lenovo {
+    background: url(./../../img/lenovo.svg) no-repeat 16px 50% #fff;
+}
+
+.brands__item--samsung {
+    background: url(./../../img/samsung.svg) no-repeat 16px 50% #fff;
+}
+
+.brands__item--apple {
+    background: url(./../../img/apple.svg) no-repeat 16px 50% #fff;
+}
+
+.brands__item--bosch {
+    background: url(./../../img/bosch.svg) no-repeat 16px 50% #fff;
+}
+
+.brands__item--hp {
+    background: url(./../../img/hp.svg) no-repeat 16px 50% #fff;
+}
+.brands__item--acer {
+    background: url(./../../img/acer.svg) no-repeat 16px 50% #fff;
+}
+
+@media (min-width: 768px) {
+
+    .brands {
+        overflow: visible;
+        flex-wrap: wrap;
+        height: 175px;
+        overflow-y: hidden;
+    }
+
+    .brands__item {
+       width: 224px;
+       margin: 8px 0;
+    }
+}
