@@ -1,6 +1,17 @@
 @import url(contact.css);
 @import url(lang.css);
 
+.menu-wrapper {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.menu {
+    background-color: #fff;
+}
+
 .menu-footer .social {
     display: flex;
 }
@@ -14,6 +25,7 @@
 .menu-footer-margin {
     margin-top: 25px;
 }
+
 
 
 @media (min-width: 1120px) {
