@@ -16,13 +16,16 @@
 }
 
 .menu-main__button span {
-    transition: opacity .1s linear;
+    transition: color .1s linear;
 }
 
 .menu-main__button:hover > span{
-    opacity: 0.5;
+    color: #7E7E82;
 }
 
+.menu-main__button--selected {
+    color: #7E7E82;
+}
 .menu-main__button--selected::before {
     content: "";
     display: block;

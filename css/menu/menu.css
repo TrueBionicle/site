@@ -5,7 +5,9 @@
 
 .menu {
     width: 320px;
+    height: 100%;
     position: fixed;
     box-shadow: 15px 0px 20px -5px rgb(197 197 197);
+    
 }
 
