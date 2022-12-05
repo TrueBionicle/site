@@ -5,6 +5,7 @@
 
 .article__text {
     line-height: 18px;
+    margin-top: 0;
     margin-bottom: 0;
     height: 88px;
     width: 95%;
@@ -16,46 +17,6 @@
     padding: 0;
 }
 
-.article__read-more {
-    position: relative;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 16px 0;
-    font-weight: 700;
-    padding-left: 20px;
-}
-
-.article__read-more::before {
-    content: "";
-    display: block;
-    width: 7px;
-    height: 7px;
-
-    position: absolute;
-    top: 15%;
-    left: 2px;
-    border-bottom: 2px solid #41F6D7;
-    border-left: 2px solid #41F6D7;
-    border-radius: 20%;
-    transform: rotate(-45deg);
-}
-
-.article__read-more::after {
-    content: "";
-    display: block;
-    width: 7px;
-    height: 7px;
-
-    position: absolute;
-    top:  40%;
-    left: 2px;
-    border-bottom: 2px solid #41F6D7;
-    border-left: 2px solid #41F6D7;
-    border-radius: 20%;
-    transform: rotate(-45deg);
-
-}
-
 .article__img-logo {
     width: 100vw;
     height: auto;
@@ -65,16 +26,16 @@
 @media (min-width: 768px) {
     .article-wrapper {
         display: flex;
-        margin-top: 20px;
     }
 
     .article__text {
-        height: 145px;
+        height: 159px;
         line-height: 20px;
     }
 
     .article__img-logo {
-        width: 50vw;
+        height: 250px;
+        width: 380px;
         padding-right: 25px;
     }
 }
@@ -85,9 +46,6 @@
         margin-top: 0px;
     }
 
-    .article__text {
-        height: 160px;
-    }
 
     .article-wrapper {
         margin-bottom: 24px;
@@ -97,7 +55,7 @@
     .article__text {
         line-height: 18px;
         margin-bottom: 0;
-        height: 88px;
+        height: 160px;
         width: 95%;
         overflow: hidden;
     }
@@ -122,32 +80,5 @@
         width: 100vw;
         height: auto;
     }
-
-}
-@media (min-width: 768px) {
-    .article-wrapper {
-        display: flex;
-        margin-top: 20px;
-    }
-
-    .article__text {
-        height: 145px;
-        line-height: 20px;
-    }
-
-    .article__img-logo {
-        width: 50vw;
-        padding-right: 25px;
-    }
 }
 
-
-@media (min-width: 1120px) {
-    .article-wrapper {
-        margin-top: 0px;
-    }
-
-    .article__text {
-        height: 160px;
-    }
-}

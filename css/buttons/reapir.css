@@ -1,11 +1,13 @@
 .repair {
     font-size: 0;
-}
-
-.repair {
     background: no-repeat right url(../../img/repair.svg);
     position: relative;
     margin-left: auto;
+    transition: opacity .2s linear;
+}
+
+.repair:hover {
+    opacity: 0.6;
 }
 
 .repair::before {

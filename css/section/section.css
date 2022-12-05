@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: #F8F8F8;
     max-width: 1120px;
+    padding: 0 16px;
 }
 
 .section__header {
@@ -13,8 +14,8 @@
     text-transform: uppercase;
     font-family: "TTLakes-Medium";
     
-    padding: 16px;
     margin: 0;
+    padding: 16px 0;
     background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
     border-top: 1px solid #D9FFF5;
 }
@@ -64,13 +65,19 @@
 }
 
 @media (min-width: 768px) {
+    .section {
+        padding: 0 24px;
+    }
     .section__header {
-        padding: 15px 24px;
+        padding: 15px 0 40px;
     }
 }
 
 @media (min-width: 1120px) {
+    .section {
+        padding: 0 32px;
+    }
     .section__header {
-        padding: 15px 32px;
+        padding: 15px 0 40px;
     }
 }

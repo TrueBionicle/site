@@ -5,6 +5,7 @@
     background-color: #FF3E79;
     border-radius: 100%;
     margin-right: 16px;
+    transition: opacity 0.2s linear;
 }
 
 .close::before {
@@ -29,4 +30,8 @@
     width: 2px;
     background-color: #fff;
     transform: rotate(-45deg);
+}
+
+.close:hover {
+    opacity: 0.6;
 }

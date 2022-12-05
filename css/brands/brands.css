@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     overflow: hidden;
-    margin: 12px;
+    margin: 12px 0;
 }
 
 .brands::after {
@@ -20,7 +20,9 @@
     width: 240px;
     height: 72px;
     flex-shrink: 0;
-    margin: 8px;    
+    margin-top: 0;
+    margin-bottom: 16px; 
+    margin-right: 16px;
 }
 
 
@@ -53,14 +55,37 @@
 @media (min-width: 768px) {
 
     .brands {
-        overflow: visible;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-areas: 
+        "el el el"
+        "el el el"
+        "el el el";
+        margin: 0;
         height: 175px;
-        overflow-y: hidden;
+        justify-content: space-between;
     }
 
     .brands__item {
-       width: 224px;
-       margin: 8px 0;
+        width: 224px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 990px) {
+    .brands {
+        grid-template-areas: 
+        "el el el el"
+        "el el el el"
+        "el el el el";
+    }
+
+    .brands__item {
+        width: 224px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .brands__item {
+        width: 240px;
     }
 }
