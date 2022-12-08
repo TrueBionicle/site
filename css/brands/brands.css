@@ -1,11 +1,13 @@
-.brands {
+@import url(../swiper/swiper.css);
+
+/* .brands {
     display: flex;
     justify-content: space-around;
     overflow: hidden;
     margin: 12px 0;
-}
+} */
 
-.brands::after {
+/* .brands::after {
     content: "";
     display: block;
     position: absolute;
@@ -14,7 +16,7 @@
     height: 81px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%,
     rgb(255, 255, 255) 100%);
-}
+} */
 
 .brands__item {
     width: 240px;
@@ -23,7 +25,7 @@
     margin-top: 0;
     margin-bottom: 16px; 
     margin-right: 16px;
-}
+} 
 
 
 
@@ -61,8 +63,9 @@
         "el el el"
         "el el el";
         margin: 0;
-        height: 175px;
-        justify-content: space-between;
+        gap: 0 15px;
+        height: 100%;
+        
     }
 
     .brands__item {

@@ -4,51 +4,81 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="css/menu/menu.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <title>CPS</title>
     </head>
     <body> 
         <section class="section">
             <h1 class="section__header">Ремонт техники различных брендов</h1>
-               <div class="brands">
-                    <article class="section__article brands__item brands__item--lenovo">
+            <div class="swiper ">
+               <div class="swiper-wrapper brands">
+                    <div class="swiper-slide section__article brands__item brands__item--lenovo">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--samsung">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--samsung">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--apple">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--apple">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--bosch">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--bosch">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--hp">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--hp">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--acer">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--acer">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--hp">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--hp">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--acer">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--acer">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--apple">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--apple">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--samsung">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--samsung">
                         <button class="section__button"></button>
-                    </article>
-                    <article class="section__article brands__item brands__item--apple">
+                    </div>
+                    <div class="swiper-slide section__article brands__item brands__item--apple">
                         <button class="section__button"></button>
-                    </article>
-               </div>
-                <button class="read-more read-more--state--display hide">Показать всё</button>
-               
-               
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+            <button class="read-more read-more--state--display hide">Показать всё</button>
         </section>
+
         <script src="js/main.js"></script>
+
+        <script>
+            if(window.matchMedia("(max-width: 767px)").matches) {
+                const swiper = new Swiper(".swiper", {
+                centeredSlidesBounds: true,
+                slidesPerView: 1.3,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1.3,
+                        spaceBetween: 20
+                    },
+                    500: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    }
+                }
+            })
+            }
+            
+        </script>
     </body>
 </html>

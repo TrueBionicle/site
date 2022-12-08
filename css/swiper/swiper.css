@@ -1,0 +1,40 @@
+
+    
+    
+    @media(max-width: 767px) {
+        .swiper {
+            display: block;
+            width: 100%;
+            padding-top: 16px;
+            padding-bottom: 24px;
+            padding-right: 16px;
+        }
+        
+         .swiper-wrapper {
+            height: auto;
+        }
+    
+        .swiper-pagination {
+            bottom: 10px !important;
+        }
+    
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: #c4c1c1;
+            
+        }
+    
+        .swiper-pagination-bullet-active {
+            background-color: #B5B6BC;
+        }  
+    
+    }
+@media(min-width: 768px) {
+    .swiper {
+        margin: 0;
+        padding-right: 16px;
+        height: 160px;
+    }
+}
+    
