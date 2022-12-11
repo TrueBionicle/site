@@ -12,7 +12,7 @@
     }
 
     .swiper-pagination {
-        bottom: 10px !important;
+        bottom: 10px;
     }
 
     .swiper-pagination-bullet {
@@ -28,11 +28,14 @@
 
 }
 
+
 @media(min-width: 768px) {
     .swiper {
         margin: 0;
         padding-right: 16px;
         height: 160px;
     }
+
+    
 }
     
