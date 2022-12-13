@@ -1,4 +1,4 @@
-.repair {
+.callback {
     font-size: 0;
     background: no-repeat right url(../../img/repair.svg);
     position: relative;
@@ -6,11 +6,11 @@
     transition: opacity .2s linear;
 }
 
-.repair:hover {
+.callback:hover {
     opacity: 0.6;
 }
 
-.repair::before {
+.callback::before {
     content: "";
     position: absolute;
     cursor: auto;
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-    .repair {
+    .callback {
         margin-left: 42px;
     }
 }

@@ -5,6 +5,7 @@
     height: 88px;
     align-items: center;
     background-color: #fff;
+    padding: 0 16px;
 }
 
 .header button {
@@ -19,7 +20,6 @@
 
 
 /* logo */
-
 
 .logo {
     position: relative;
@@ -40,7 +40,9 @@
 
 
 @media (min-width: 768px) {
-
+    .header {
+        padding: 0 24px;
+    }
     .logo {
         margin-left: 26px;
     }
@@ -51,7 +53,7 @@
 
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
     .header {
         display: none;
     }

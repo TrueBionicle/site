@@ -1,6 +1,10 @@
+.article {
+    padding-top: 24px;
+    padding-bottom: 30px;
+}
+
 .article-wrapper {
-    margin-bottom: 24px;
-    margin-top: 24px;
+    padding-left: 18px;
 }
 
 .article__text {
@@ -24,8 +28,11 @@
 
 
 @media (min-width: 768px) {
-    .article-wrapper {
+    .article {
         display: flex;
+        padding-top: 32px;
+        padding-left: 24px;
+        padding-bottom: 32px;
     }
 
     .article__text {
@@ -42,14 +49,14 @@
 
 
 @media (min-width: 1120px) {
-    .article-wrapper {
-        margin-top: 0px;
+    .article {
+        padding-top: 10px;
+        padding-left: 32px;
+        padding-bottom: 50px;
     }
 
-
     .article-wrapper {
-        margin-bottom: 24px;
-        margin-top: 24px;
+        margin: 0;
     }
 
     .article__text {
@@ -65,12 +72,12 @@
         padding: 0;
     }
 
-    .article__read-more {
+    /* .article__read-more {
         font-size: 16px;
         line-height: 24px;
         margin: 16px 0;
         font-weight: 700;
-    }
+    } */
 
     .article__read-more svg {
         margin-right: 16px;

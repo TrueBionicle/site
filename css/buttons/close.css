@@ -8,11 +8,13 @@
     transition: opacity 0.2s linear;
 }
 
+
+
 .close::before {
     content: "";
     position: absolute;
-    top: 20%;
-    left: 48%;
+    top: 22%;
+    left: 46%;
     display: block;
     height: 22px;
     width: 2px;
@@ -23,8 +25,8 @@
 .close::after {
     content: "";
     position: absolute;
-    top: 20%;
-    left: 48%;
+    top: 22%;
+    left: 46%;
     display: block;
     height: 22px;
     width: 2px;
@@ -34,4 +36,21 @@
 
 .close:hover {
     opacity: 0.6;
+}
+
+.close--modalImg {
+    display: inherit;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.close--modalForm {
+    display: inherit;
+    position: relative;
+    margin-left: 16px;
+    margin-right: auto;
+    
+    top: 2%;
+    left: 2%;
 }

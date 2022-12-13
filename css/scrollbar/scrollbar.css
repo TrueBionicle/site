@@ -22,19 +22,19 @@
     line-height: 24px;
     text-decoration: none;
     color: #7E7E82;
-    margin-bottom: 10px;  
 }
 
-.scrollbar__item--state--active {
+.scrollbar__item--active {
     border: 2px solid #B8FFEC;
     border-radius: 10px;
     background-color: #fff;
+    padding: 6px 14px;
 }
-.scrollbar__item:focus {
+/* .scrollbar__item:focus {
     border: 2px solid #B8FFEC;
     border-radius: 10px;
     background-color: #fff;
-}
+} */
 
 
 .scrollbar-wrapper {

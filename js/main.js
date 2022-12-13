@@ -10,7 +10,8 @@ function showContent () {
             target.classList.toggle("read-more--state-transform");
 
             if(target.textContent == "Скрыть") {
-                target.classList.contains("read-more--text--true")? target.textContent ="Читать далее" : target.textContent = "Показать всё";
+                target.classList.contains("read-more--text--true")? target.textContent ="Читать далее"
+                :target.textContent = "Показать всё";
             } else {
                 target.textContent = "Скрыть";
             } 

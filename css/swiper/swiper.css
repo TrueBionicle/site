@@ -7,13 +7,11 @@
         padding-right: 16px;
     }
     
-        .swiper-wrapper {
+    .swiper-wrapper {
+        padding-bottom: 16px;
         height: auto;
     }
 
-    .swiper-pagination {
-        bottom: 10px;
-    }
 
     .swiper-pagination-bullet {
         width: 10px;
@@ -32,10 +30,17 @@
 @media(min-width: 768px) {
     .swiper {
         margin: 0;
-        padding-right: 16px;
+        padding-right: 24px;
         height: 160px;
     }
-
-    
 }
-    
+
+@media(min-width: 1120px) {
+    .swiper {
+        padding-right: 32px;
+    }
+}
+
+.content--state--height {
+    height: auto;
+}

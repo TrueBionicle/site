@@ -23,42 +23,11 @@
     height: 72px;
     flex-shrink: 0;
     margin-top: 0;
-    margin-bottom: 16px; 
-    margin-right: 16px;
-    background-color: #fff;
 } 
 
 .brands__img {
     padding-left: 16px;
 }
-
-
-
-
-/* brands logo */
-
-/* .brands__item--lenovo {
-    background: url(./../../img/lenovo.svg) no-repeat 16px 50% #fff;
-} */
-
-/* .brands__item--samsung {
-    background: url(./../../img/samsung.svg) no-repeat 16px 50% #fff;
-}
-
-.brands__item--apple {
-    background: url(./../../img/apple.svg) no-repeat 16px 50% #fff;
-}
-
-.brands__item--bosch {
-    background: url(./../../img/bosch.svg) no-repeat 16px 50% #fff;
-}
-
-.brands__item--hp {
-    background: url(./../../img/hp.svg) no-repeat 16px 50% #fff;
-}
-.brands__item--acer {
-    background: url(./../../img/acer.svg) no-repeat 16px 50% #fff;
-} */
 
 @media (min-width: 768px) {
 
@@ -68,10 +37,8 @@
         "el el el"
         "el el el"
         "el el el";
-        margin: 0;
-        gap: 0 15px;
-        height: 100%;
-        
+        justify-items: center;
+        gap: 16px 15px;
     }
 
     .brands__item {
@@ -80,12 +47,13 @@
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1120px) {
     .brands {
         grid-template-areas: 
         "el el el el"
         "el el el el"
         "el el el el";
+        gap:16px 32px ;
     }
 
     .brands__item {

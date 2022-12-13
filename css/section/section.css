@@ -1,8 +1,7 @@
 .section {
     display: flex;
     flex-direction: column;
-    background-color: #F8F8F8;
-    margin: auto;
+
     max-width: 1120px;
     padding-left: 16px;
     min-width: 0;
@@ -25,6 +24,9 @@
 .section__article {
     display: flex;
     align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+
 }
 
 .section__button {
@@ -67,6 +69,7 @@
 
 @media (min-width: 768px) {
     .section {
+        /* margin-top: 32px; */
         padding-left: 24px;
     }
     .section__header {
@@ -77,6 +80,7 @@
 
 @media (min-width: 1120px) {
     .section {
+        /* margin-top: 50px; */
         padding-left: 32px;
     }
     .section__header {
