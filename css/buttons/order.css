@@ -36,15 +36,13 @@
 .order--form {
     position: relative;
     width: 135px;
-    /* top: 10px;
-    left: 85px; */
     margin-top: 25px;
     margin-left: auto;
 }
 
 .order--form::after {
     top: 12px;
-    right: -50px;
+    right: 25px;
 }
 
 .order-text {
