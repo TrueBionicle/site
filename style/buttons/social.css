@@ -1,0 +1,33 @@
+.social {
+  display: none;
+  margin-left: auto;
+  padding-left: 24px;
+}
+.social button {
+  transition: opacity 0.2s linear;
+}
+.social button:hover {
+  opacity: 0.6;
+}
+.social .social__call {
+  background: no-repeat url(../../img/call.svg);
+}
+.social .social__chat {
+  background: no-repeat url(../../img/chat.svg);
+}
+.social .social__profile {
+  background: no-repeat url(../../img/profile.svg);
+}
+
+@media (min-width: 768px) {
+  .social {
+    display: flex;
+  }
+  .social button {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+}
+
+/*# sourceMappingURL=social.css.map */
