@@ -1,0 +1,8 @@
+.status {
+    font-size: 0;
+    background: no-repeat right url(../../img/status.svg);
+    transition: opacity 0.2s linear;
+    &:hover {
+        opacity: 0.6;
+    }
+}

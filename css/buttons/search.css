@@ -1,0 +1,11 @@
+.search {
+    width: 40px;
+    height: 40px;
+    background: url(../../img/search.svg) no-repeat ;
+    margin-left: auto;
+    transition: opacity .2s linear;
+}
+
+.search:hover {
+    opacity: 0.6;
+}
