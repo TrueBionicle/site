@@ -1,7 +1,6 @@
-@import url(../style.css);
-@import url(menu-header/menu-header.css);
-@import url(menu-main/menu-main.css);
-@import url(menu-footer/menu-footer.css);
+@import "menu-header/menu-header";
+@import "menu-main/menu-main";
+@import 'menu-footer/menu-footer';
 
 
 .menu-wrapper {
@@ -22,7 +21,7 @@
     width: 320px;
     height: 100%;
     background-color: rgb(255, 255, 255);
-    box-shadow: 15px 0px 20px -5px rgb(197 197 197);
+    box-shadow: 15px 0px 20px -5px rgb(197, 197, 197);
 }
 
 @media(min-width: 1440px) {

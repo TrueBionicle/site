@@ -50,3 +50,9 @@
     top: 2%;
     left: 2%;
 }
+
+@media (min-width : 1440px) {
+    .close--modalForm {
+        left: -20%;
+    }
+}
