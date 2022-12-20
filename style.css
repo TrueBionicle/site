@@ -89,7 +89,7 @@
 
 .callback {
   font-size: 0;
-  background: no-repeat right url(./static/repair.svg);
+  background: no-repeat right url(./static/status.svg);
   position: relative;
   margin-left: auto;
   transition: opacity .2s linear; }
@@ -152,6 +152,10 @@
   margin-right: auto;
   top: 2%;
   left: 2%; }
+
+@media (min-width: 1440px) {
+  .close--modalForm {
+    left: -20%; } }
 
 .offer {
   display: block;
@@ -270,9 +274,6 @@
   top: 30%;
   transform: rotate(135deg); }
 
-.content--state--height {
-  height: auto !important; }
-
 @media (min-width: 768px) {
   .read-more--state--display {
     display: block; }
@@ -280,9 +281,9 @@
     margin-bottom: 32px; } }
 
 .search {
+  background: url(./static/search.svg) no-repeat;
   width: 40px;
   height: 40px;
-  background: url(./static/search.svg) no-repeat;
   margin-left: auto;
   transition: opacity .2s linear; }
   .search:hover {
@@ -688,17 +689,15 @@
   z-index: 999;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.562); }
+  background: #ffffffd5; }
   .modal .modal__dialog {
     display: flex;
     margin: auto;
     top: 0;
     left: 0;
-    height: 940px;
-    max-width: 1440px; }
+    height: 100%; }
   .modal .modal__img {
     position: relative;
-    background: #ffffffd5;
     z-index: 1; }
   .modal .modal__form {
     border-left: 1px solid #B8FFEC;
@@ -707,7 +706,9 @@
     flex-direction: column;
     align-items: center;
     box-shadow: -10px -10px 13px 7px #cccccc;
-    z-index: 2; }
+    z-index: 2;
+    width: 320px;
+    margin-left: auto; }
   .modal .modal__input {
     padding: 12px 16px;
     width: 90%;
@@ -736,20 +737,9 @@
 .modal--show {
   display: block; }
 
-@media (min-width: 768px) {
-  .modal__img {
-    display: block;
-    width: 60%; }
+@media (min-width: 1440px) {
   .modal__form {
-    width: 40%; }
-  .close--modalForm {
-    display: none; } }
-
-@media (min-width: 1120px) {
-  .modal__img {
-    width: 70%; }
-  .modal__form {
-    width: 30%; } }
+    width: 440px !important; } }
 
 .repairs {
   position: relative;
@@ -832,9 +822,8 @@
   display: flex;
   flex-direction: column;
   max-width: 1120px;
-  min-width: 0;
-  border-top: 1px solid #B8FFEC;
-  padding-left: 16px; }
+  padding-left: 16px;
+  min-width: 0; }
   .section .section__header {
     color: #7E7E82;
     font-size: 16px;
@@ -844,7 +833,8 @@
     font-family: "TTLakes-Medium";
     margin: 0;
     padding: 16px 0;
-    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%); }
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    border-top: 1px solid #B8FFEC; }
   .section .section__article {
     display: flex;
     align-items: center;
@@ -909,7 +899,7 @@
     background-color: #B5B6BC; } }
 
 .content--state--height {
-  height: auto; }
+  height: auto !important; }
 
 @media (min-width: 768px) {
   .swiper {
@@ -923,21 +913,19 @@
 
 .title-wrapper {
   padding: 24px 0 24px 0; }
-
-.title-wrapper button {
-  display: none;
-  padding-right: 50px; }
+  .title-wrapper button {
+    display: none;
+    padding-right: 50px; }
 
 .title {
   position: relative;
   padding-left: 16px;
   line-height: 40px;
   margin: 0; }
-
-.title--modal {
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 24px; }
+  .title.title__modal {
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 24px; }
 
 .active::before {
   content: "";
@@ -1085,6 +1073,10 @@ button {
 
 .main {
   border-top: 1px solid #D9FFF5; }
+
+h1 {
+  font-family: 'TTLakes-Bold';
+  font-size: 28px; }
 
 @media (min-width: 768px) {
   .container {
