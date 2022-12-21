@@ -69,7 +69,9 @@
 @media (min-width: 768px) {
   .brands {
     display: grid;
-    grid-template-areas: "el el el" "el el el" "el el el";
+    grid-template-areas: "el el el"
+ "el el el"
+ "el el el";
     justify-items: center;
     gap: 16px 15px; }
     .brands .brands__item {
@@ -78,7 +80,9 @@
 
 @media (min-width: 1120px) {
   .brands {
-    grid-template-areas: "el el el el" "el el el el" "el el el el";
+    grid-template-areas: "el el el el"
+ "el el el el"
+ "el el el el";
     gap: 16px 32px; }
     .brands .brands__item {
       width: 224px; } }
@@ -762,13 +766,17 @@
 @media (min-width: 768px) {
   .repairs {
     display: grid;
-    grid-template-areas: "el el el" "el el el" "el el el";
+    grid-template-areas: "el el el"
+ "el el el"
+ "el el el";
     gap: 24px; } }
 
 @media (min-width: 1220px) {
   .repairs {
     display: grid;
-    grid-template-areas: "el el el el" "el el el el" "el el el el"; } }
+    grid-template-areas: "el el el el"
+ "el el el el"
+ "el el el el"; } }
 
 .scrollbar {
   display: flex;
@@ -848,7 +856,8 @@
     margin-right: 16px;
     border: 2px solid #FF3E79;
     border-radius: 100%;
-    transition: background-color .5s linear,  border-right .5s linear, border-top .5s linear; }
+    transition: background-color .5s linear, 
+ border-right .5s linear, border-top .5s linear; }
     .section .section__button:before {
       content: "";
       display: block;
@@ -959,6 +968,10 @@
   .title {
     padding-left: 32px;
     margin-right: auto; }
+  .title.title__modal {
+    
+    margin-top: 0px;
+  }
   .callback::before {
     content: none; } }
 
